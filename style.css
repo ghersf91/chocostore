@@ -15,6 +15,7 @@ body {
     background-color: #3d5a80;
     color: #e0fbfc;
     padding: 25px 60px;
+    margin-bottom: 30px;
 }
 
 .cart {
@@ -35,4 +36,54 @@ body {
     color: #e0fbfc;
     border-radius: 3px;
     padding: 3px;
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .shop {
+        grid-template-columns: repeat(2, 223px);
+    }
+}
+
+@media (max-width: 500px) {
+    .shop {
+        grid-template-columns: repeat(1, 223px);
+    }
+}
+
+.item {
+    border: 2px solid #3d5a80;
+    border-radius: 4px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.price-quantity {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.bi-dash-circle {
+    color: red;
+}
+
+.bi-plus-circle {
+    color: green;
 }
