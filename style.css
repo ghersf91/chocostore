@@ -87,3 +87,10 @@ body {
 .bi-plus-circle {
     color: green;
 }
+
+img {
+    float: left;
+    width: 215px;
+    height: 180px;
+    object-fit: cover;
+}
