@@ -5,6 +5,7 @@ let basket = JSON.parse(localStorage.getItem("data")) || [];
 let generateShop = () => {
     return (shop.innerHTML = shopItemsData.map((item) => {
         let { id, name, price, desc, img } = item;
+        // let search = basket.find((x) => x.id === id) || [];
         return `
                 <div id=product-id-${id} class="item">
                     <img width="219" src="${img}" alt="">
@@ -39,7 +40,7 @@ let increment = (id) => {
         search.item += 1
     }
 
-    update(selectedItem);
+    update(id);
 };
 
 let decrement = (id) => {
@@ -51,13 +52,21 @@ let decrement = (id) => {
         search.item -= 1
     }
 
-    update(selectedItem);
+    update(id);
 };
 
 let update = (id) => {
     let search = basket.find((x) => x.id === id);
-    console.log(search.item);
-    document.getElementById(id).innerHTML = search.item
+    function pad(number, length) {
+
+        let str = '' + number;
+        while (str.length < length) {
+            str = '0' + str;
+        }
+        return str;
+    }
+
+    document.getElementById(pad(id, 3)).innerHTML = search.item;
     // calculation();
 };
 
