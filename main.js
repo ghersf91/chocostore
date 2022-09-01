@@ -67,7 +67,10 @@ let update = (id) => {
     }
 
     document.getElementById(pad(id, 3)).innerHTML = search.item;
-    // calculation();
+    calculation();
 };
 
-// let calculation = () => { }
+let calculation = () => {
+    let cartIcon = document.getElementById("cartAmount")
+    cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0)
+}
