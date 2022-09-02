@@ -57,16 +57,7 @@ let decrement = (id) => {
 
 let update = (id) => {
     let search = basket.find((x) => x.id === id);
-    function pad(number, length) {
-
-        let str = '' + number;
-        while (str.length < length) {
-            str = '0' + str;
-        }
-        return str;
-    }
-
-    document.getElementById(pad(id, 3)).innerHTML = search.item;
+    document.getElementById(String(id).padStart(3, '0')).innerHTML = search.item;
     calculation();
 };
 
