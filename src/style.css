@@ -22,6 +22,11 @@ i {
     margin-bottom: 30px;
 }
 
+.logo {
+    text-decoration: none;
+    color: #e0fbfc;
+}
+
 .cart {
     position: relative;
     background-color: #e0fbfc;
