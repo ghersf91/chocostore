@@ -103,3 +103,18 @@ img {
     height: 180px;
     object-fit: cover;
 }
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-btn {
+    background-color: #3d5a80;
+    color: #e0fbfc;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
