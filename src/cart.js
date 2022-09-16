@@ -1,4 +1,3 @@
-const shopItemsData = require('./Data');
 let label = document.getElementById('label');
 let shoppingCart = document.getElementById('shopping-cart');
 
