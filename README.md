@@ -1,5 +1,5 @@
 # ChocoStore
 
-ChocoStore is an shopping cart app built using only HTML, Vanilla CSS and Vanilla JavaScript, to practice core concepts of the language.
+ChocoStore is a shopping cart app built using HTML, Vanilla CSS and Vanilla JavaScript, to practice core concepts of these languages.
 
-It was made following a [freeCodeCamp tutorial](https://www.freecodecamp.org/news/code-a-shopping-cart-with-javascript/), and adapting the code to particular needs and tastes.
+It was made following a [freeCodeCamp tutorial](https://www.freecodecamp.org/news/code-a-shopping-cart-with-javascript/), adapting the code to particular needs.
