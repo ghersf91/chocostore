@@ -26,7 +26,7 @@ let generateCartItems = () => {
                             <p>${search.name}</p>
                             <p class="cart-item-price">$ ${search.price.toFixed(2)}</p>
                         </h4>
-                        <i class="bi bi-x-lg"></i>
+                        <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
                     </div>
 
                     <div class="buttons">
@@ -93,3 +93,11 @@ let update = (id) => {
     document.getElementById(id).innerHTML = search.item;
     calculation();
 };
+
+let removeItem = (id) => {
+    let selectedItem = id;
+    basket = basket.filter((card) => card.id !== selectedItem.id);
+    generateCartItems();
+    calculation();
+    localStorage.setItem("data", JSON.stringify(basket));
+}
