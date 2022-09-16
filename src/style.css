@@ -16,6 +16,7 @@ i {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: #3d5a80;
     color: #e0fbfc;
     padding: 25px 60px;
