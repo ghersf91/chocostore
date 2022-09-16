@@ -25,7 +25,7 @@ let generateCartItems = () => {
                     <div class="name-price-x">
                         <h4 class="name-price">
                             <p>${name}</p>
-                            <p class="cart-item-price">$ ${price.toFixed(2)}</p>
+                            <p class="cart-item-price">$${price.toFixed(2)}</p>
                         </h4>
                         <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
                     </div>
