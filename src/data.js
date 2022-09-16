@@ -55,3 +55,5 @@ let shopItemsData = [
         desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, voluptates?",
         img: "images/twix-bar.jpeg"
     }];
+
+    module.exports = shopItemsData;
